@@ -4,7 +4,7 @@ dotenv.config()
 
 export const connectDB = async () => {
     try {
-        const mongo_connection = await moogose.connect(process.env.MONGODB_URI)
+        const mongo_connection = await moogose.connect(process.env.MONGODB_URI1)
         console.log(`MongoDB connected: ${mongo_connection.connection.host}`)
     }
     catch (error) {
